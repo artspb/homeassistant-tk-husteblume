@@ -1,4 +1,5 @@
 """Constants for TK Husteblume."""
+
 # Base component constants
 NAME = "TK Husteblume"
 DOMAIN = "tk_husteblume"

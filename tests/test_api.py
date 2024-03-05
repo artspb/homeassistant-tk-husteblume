@@ -1,11 +1,11 @@
 """Tests for TK Husteblume api."""
+
 import asyncio
 
 import aiohttp
-from custom_components.tk_husteblume.api import (
-    TkHusteblumeApiClient,
-)
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
+
+from custom_components.tk_husteblume.api import TkHusteblumeApiClient
 
 
 async def test_api(hass, aioclient_mock, caplog):
