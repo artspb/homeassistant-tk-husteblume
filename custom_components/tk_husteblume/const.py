@@ -6,7 +6,7 @@ DOMAIN = "tk_husteblume"
 DOMAIN_DATA = f"{DOMAIN}_data"
 VERSION = "0.0.0"
 
-ATTRIBUTION = "Data provided by http://jsonplaceholder.typicode.com/"
+ATTRIBUTION = "Data provided by Techniker Krankenkasse"
 ISSUE_URL = "https://github.com/artspb/homeassistant-tk-husteblume/issues"
 
 # Icons
@@ -23,8 +23,11 @@ PLATFORMS = [BINARY_SENSOR, SENSOR, SWITCH]
 
 
 # Configuration and options
-CONF_ENABLED = "enabled"
-CONF_USERNAME = "username"
+CONF_AGE_GROUP = "age_group"
+CONF_GENDER = "gender"
+CONF_BIRTH_MONTH = "birth_month"
+CONF_STATION = "station"
+CONF_APP_ID = "app_id"
 CONF_PASSWORD = "password"
 
 # Defaults

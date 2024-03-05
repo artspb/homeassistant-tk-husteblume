@@ -5,9 +5,9 @@
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/artspb/homeassistant-tk-husteblume",
-  "integration_type": "entity",
+  "integration_type": "service",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/artspb/homeassistant-tk-husteblume/issues",
-  "requirements": [],
+  "requirements": ["async-timeout==4.0.3"],
   "version": "0.0.0"
 }

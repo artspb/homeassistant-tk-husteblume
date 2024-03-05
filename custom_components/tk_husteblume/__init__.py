@@ -18,13 +18,14 @@ from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 from homeassistant.helpers.update_coordinator import UpdateFailed
 
 from .api import TkHusteblumeApiClient
+from .const import CONF_APP_ID
 from .const import CONF_PASSWORD
-from .const import CONF_USERNAME
+from .const import CONF_STATION
 from .const import DOMAIN
 from .const import PLATFORMS
 from .const import STARTUP_MESSAGE
 
-SCAN_INTERVAL = timedelta(seconds=30)
+SCAN_INTERVAL = timedelta(minutes=60)
 
 _LOGGER: logging.Logger = logging.getLogger(__package__)
 
@@ -35,18 +36,19 @@ async def async_setup(hass: HomeAssistant, config: Config):
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
-    """Set up this integration using UI."""
+    """Set up this integration using the UI."""
     if hass.data.get(DOMAIN) is None:
         hass.data.setdefault(DOMAIN, {})
         _LOGGER.info(STARTUP_MESSAGE)
 
-    username = entry.data.get(CONF_USERNAME)
+    app_id = entry.data.get(CONF_APP_ID)
     password = entry.data.get(CONF_PASSWORD)
+    station = entry.data.get(CONF_STATION)
 
     session = async_get_clientsession(hass)
-    client = TkHusteblumeApiClient(username, password, session)
+    client = TkHusteblumeApiClient(session, app_id, password, station)
 
-    coordinator = TkHusteblumeDataUpdateCoordinator(hass, client=client)
+    coordinator = TkHusteblumeDataUpdateCoordinator(hass, client)
     await coordinator.async_refresh()
 
     if not coordinator.last_update_success:
@@ -57,7 +59,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     for platform in PLATFORMS:
         if entry.options.get(platform, True):
             coordinator.platforms.append(platform)
-            hass.async_add_job(
+            await hass.async_add_job(
                 hass.config_entries.async_forward_entry_setup(entry, platform)
             )
 

@@ -1,0 +1,2 @@
+async-timeout==4.0.3
+husteblume @ git+https://github.com/artspb/pyHusteblume.git@master
