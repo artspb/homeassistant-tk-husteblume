@@ -1,0 +1,10 @@
+{
+  "domain": "tk_husteblume",
+  "name": "TK Husteblume",
+  "documentation": "https://github.com/artspb/homeassistant-tk-husteblume",
+  "issue_tracker": "https://github.com/artspb/homeassistant-tk-husteblume/issues",
+  "dependencies": [],
+  "config_flow": true,
+  "codeowners": ["@artspb"],
+  "requirements": []
+}
