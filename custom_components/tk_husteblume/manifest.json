@@ -1,13 +1,13 @@
 {
   "domain": "tk_husteblume",
   "name": "TK Husteblume",
-  "version": "0.0.0",
-  "documentation": "https://github.com/artspb/homeassistant-tk-husteblume",
-  "issue_tracker": "https://github.com/artspb/homeassistant-tk-husteblume/issues",
+  "codeowners": ["@artspb"],
+  "config_flow": true,
   "dependencies": [],
+  "documentation": "https://github.com/artspb/homeassistant-tk-husteblume",
   "integration_type": "entity",
   "iot_class": "cloud_polling",
-  "config_flow": true,
-  "codeowners": ["@artspb"],
-  "requirements": []
+  "issue_tracker": "https://github.com/artspb/homeassistant-tk-husteblume/issues",
+  "requirements": [],
+  "version": "0.0.0"
 }
