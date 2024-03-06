@@ -1,37 +1,60 @@
 """Sensor platform for TK Husteblume."""
 
-from .const import DEFAULT_NAME
+import logging
+
+from homeassistant.components.sensor import SensorEntity
+from homeassistant.components.sensor import SensorEntityDescription
+
+from . import CONF_STATION
 from .const import DOMAIN
 from .const import ICON
-from .const import SENSOR
 from .entity import TkHusteblumeEntity
 
+_LOGGER: logging.Logger = logging.getLogger(__package__)
 
-async def async_setup_entry(hass, entry, async_add_devices):
+
+async def async_setup_entry(hass, config_entry, async_add_devices):
     """Setup sensor platform."""
-    coordinator = hass.data[DOMAIN][entry.entry_id]
-    async_add_devices([TkHusteblumeSensor(coordinator, entry)])
+    _LOGGER.info("Creating entities")
+    station = config_entry.data[CONF_STATION]
+    coordinator = hass.data[DOMAIN][config_entry.entry_id]
+    devices = []
+    for allergen in coordinator.data:
+        devices.append(TkHusteblumeSensor(station, allergen, coordinator, config_entry))
+    async_add_devices(devices)
+    _LOGGER.info(f"Created {len(devices)} entities")
 
 
-class TkHusteblumeSensor(TkHusteblumeEntity):
+class TkHusteblumeSensor(TkHusteblumeEntity, SensorEntity):
     """tk_husteblume Sensor class."""
 
-    @property
-    def name(self):
-        """Return the name of the sensor."""
-        return f"{DEFAULT_NAME}_{SENSOR}"
+    def __init__(self, station, allergen, coordinator, config_entry):
+        super().__init__(coordinator, config_entry)
+        self.entity_description = SensorEntityDescription(
+            key=allergen,
+            has_entity_name=True,
+            icon=ICON,
+            device_class=f"{DOMAIN}__allergen_device_class",
+            translation_key=allergen,
+        )
+        self.station = station
+        self.allergen = allergen
 
     @property
-    def state(self):
+    def native_value(self):
         """Return the state of the sensor."""
-        return self.coordinator.data.get("body")
+        values = self.coordinator.data.get(self.allergen)
+        return values[0] if len(values) > 0 else None
 
     @property
-    def icon(self):
-        """Return the icon of the sensor."""
-        return ICON
-
-    @property
-    def device_class(self):
-        """Return de device class of the sensor."""
-        return "tk_husteblume__custom_device_class"
+    def extra_state_attributes(self):
+        """Return the state attributes of the sensor."""
+        values = self.coordinator.data.get(self.allergen)
+        return (
+            {
+                "tomorrow": values[1],
+                "day_after_tomorrow": values[2],
+            }
+            if len(values) > 2
+            else None
+        )

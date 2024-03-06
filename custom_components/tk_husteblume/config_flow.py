@@ -60,7 +60,8 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 if valid:
                     _LOGGER.info("Credentials are valid, creating an entry")
                     return self.async_create_entry(
-                        title=user_input[CONF_APP_ID], data=user_input
+                        title=f"{user_input[CONF_STATION]} {user_input[CONF_APP_ID]}",
+                        data=user_input,
                     )
                 else:
                     self._errors["base"] = "auth"

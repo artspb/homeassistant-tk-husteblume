@@ -150,104 +150,94 @@
       }
     }
   },
-  "options": {
-    "step": {
-      "user": {
-        "data": {
-          "DEAACH": "Aachen",
-          "DEAMRU": "Amrum",
-          "DEAUKR": "Aukrug",
-          "DEBADE": "Bad Ems",
-          "DEBAMB": "Bamberg",
-          "DEBAYR": "Bayreuth",
-          "DEBER1": "Berlin Charité",
-          "DEBERC": "Berchtesgaden",
-          "DEBERL": "Berlin",
-          "DEBIED": "München-Biederstein",
-          "DEBINZ": "Binz/Rügen",
-          "DEBITB": "Bitburg",
-          "DEBOCH": "Bochum",
-          "DEBONN": "Bonn",
-          "DEBORK": "Borkum",
-          "DEBRAU": "Braunschweig",
-          "DEBREM": "Bremen",
-          "DEBUXT": "Buxtehude",
-          "DECHEM": "Chemnitz",
-          "DECOTT": "Cottbus",
-          "DEDELM": "Delmenhorst",
-          "DEDONA": "Donaustauf",
-          "DEDREB": "Drebkau",
-          "DEDRES": "Dresden",
-          "DEERFU": "Erfurt",
-          "DEERLA": "Erlangen",
-          "DEESSE": "Essen",
-          "DEFLEN": "Flensburg",
-          "DEFRAN": "Frankfurt",
-          "DEFREI": "Freiburg",
-          "DEFREU": "Freudenstadt",
-          "DEFULD": "Fulda",
-          "DEGAIS": "Gaissach/Bad Tölz",
-          "DEGARM": "Garmisch",
-          "DEGARZ": "Garz (Rügen)",
-          "DEGEES": "Geesthacht",
-          "DEGERL": "Gerlingen",
-          "DEGIES": "Giessen",
-          "DEGOET": "Göttingen",
-          "DEGRAF": "Grafschaft/Schmallenberg",
-          "DEGREI": "Greifswald",
-          "DEHAGE": "Hagen/Westf",
-          "DEHAMB": "Hamburg",
-          "DEHANN": "Hannover",
-          "DEHDMM": "Heiligendamm",
-          "DEHEID": "Heidelberg",
-          "DEHOMB": "Homburg",
-          "DEINZE": "Inzell",
-          "DEJENA": "Jena",
-          "DEKARL": "Karlsruhe",
-          "DEKIEL": "Kiel",
-          "DEKOEL": "Köln",
-          "DEKOEN": "Königsfeld",
-          "DEKREU": "Bad Kreuznach",
-          "DELEIP": "Leipzig",
-          "DELEMW": "Lemwerder",
-          "DELIPP": "Bad Lippspringe",
-          "DELOEW": "Löwenstein",
-          "DELUEB": "Lübeck",
-          "DEMAGD": "Magdeburg",
-          "DEMANN": "Mannheim",
-          "DEMARB": "Marburg",
-          "DEMOEN": "Mönchengladbach",
-          "DEMOER": "Moers",
-          "DEMSTR": "Münster",
-          "DEMUNC": "München",
-          "DEMUST": "Münnerstadt",
-          "DENEST": "Neustrelitz",
-          "DENEUS": "Neustadt/Südharz",
-          "DENORD": "Norderney",
-          "DEOBER": "Oberjoch",
-          "DEOLDE": "Oldenburg",
-          "DEPINN": "Pinneberg",
-          "DEPOTS": "Potsdam",
-          "DEPRER": "Prerow/Darß",
-          "DEREIN": "Reinbek (Hamburg)",
-          "DEROSE": "Rosenheim",
-          "DEROST": "Rostock",
-          "DESCHN": "Schneefernerhaus",
-          "DESOES": "Soest",
-          "DESYLT": "Sylt (Westerland)",
-          "DETRAU": "Traunstein",
-          "DETREU": "Treuenbrietzen",
-          "DETRIE": "Trier",
-          "DEVECH": "Vechta",
-          "DEWALS": "Walsrode",
-          "DEWANG": "Wangen",
-          "DEWARN": "Warnemünde",
-          "DEWASS": "Wasserburg",
-          "DEWEST": "Westerland/Sylt",
-          "DEWIES": "Wiesbaden",
-          "DEWLOG": "Westerloge",
-          "DEWUER": "Würzburg",
-          "DEZUSM": "Zusmarshausen"
+  "entity": {
+    "sensor": {
+      "ALNU": {
+        "name": "Alder",
+        "state_attributes": {
+          "tomorrow": {
+            "name": "Tomorrow"
+          },
+          "day_after_tomorrow": {
+            "name": "Day after tomorrow"
+          }
+        }
+      },
+      "AMBR": {
+        "name": "Ragweed",
+        "state_attributes": {
+          "tomorrow": {
+            "name": "Tomorrow"
+          },
+          "day_after_tomorrow": {
+            "name": "Day after tomorrow"
+          }
+        }
+      },
+      "ARTE": {
+        "name": "Mugwort",
+        "state_attributes": {
+          "tomorrow": {
+            "name": "Tomorrow"
+          },
+          "day_after_tomorrow": {
+            "name": "Day after tomorrow"
+          }
+        }
+      },
+      "BETU": {
+        "name": "Birch",
+        "state_attributes": {
+          "tomorrow": {
+            "name": "Tomorrow"
+          },
+          "day_after_tomorrow": {
+            "name": "Day after tomorrow"
+          }
+        }
+      },
+      "CORY": {
+        "name": "Hazel",
+        "state_attributes": {
+          "tomorrow": {
+            "name": "Tomorrow"
+          },
+          "day_after_tomorrow": {
+            "name": "Day after tomorrow"
+          }
+        }
+      },
+      "FRAX": {
+        "name": "Ash",
+        "state_attributes": {
+          "tomorrow": {
+            "name": "Tomorrow"
+          },
+          "day_after_tomorrow": {
+            "name": "Day after tomorrow"
+          }
+        }
+      },
+      "POAC": {
+        "name": "Grasses",
+        "state_attributes": {
+          "tomorrow": {
+            "name": "Tomorrow"
+          },
+          "day_after_tomorrow": {
+            "name": "Day after tomorrow"
+          }
+        }
+      },
+      "SECA": {
+        "name": "Rye",
+        "state_attributes": {
+          "tomorrow": {
+            "name": "Tomorrow"
+          },
+          "day_after_tomorrow": {
+            "name": "Day after tomorrow"
+          }
         }
       }
     }

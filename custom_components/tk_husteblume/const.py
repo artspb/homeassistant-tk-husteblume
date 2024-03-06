@@ -10,16 +10,11 @@ ATTRIBUTION = "Data provided by Techniker Krankenkasse"
 ISSUE_URL = "https://github.com/artspb/homeassistant-tk-husteblume/issues"
 
 # Icons
-ICON = "mdi:format-quote-close"
-
-# Device classes
-BINARY_SENSOR_DEVICE_CLASS = "connectivity"
+ICON = "mdi:allergy"
 
 # Platforms
-BINARY_SENSOR = "binary_sensor"
 SENSOR = "sensor"
-SWITCH = "switch"
-PLATFORMS = [BINARY_SENSOR, SENSOR, SWITCH]
+PLATFORMS = [SENSOR]
 
 
 # Configuration and options
