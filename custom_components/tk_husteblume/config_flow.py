@@ -61,7 +61,7 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 if valid:
                     _LOGGER.info("Credentials are valid, creating an entry")
                     return self.async_create_entry(
-                        title=f"{user_input[CONF_STATION]} {user_input[CONF_APP_ID]}",
+                        title=f"{user_input[CONF_STATION].upper()} {user_input[CONF_APP_ID]}",
                         data=user_input,
                     )
                 else:
@@ -95,9 +95,9 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                     ): SelectSelector(
                         SelectSelectorConfig(
                             options=[
-                                "UP_TO_TWENTY",
-                                "TWENTY_ONE_TO_FORTY",
-                                "FORTY_ONE_AND_ABOVE",
+                                "up_to_twenty",
+                                "twenty_one_to_forty",
+                                "forty_one_and_above",
                             ],
                             mode=SelectSelectorMode.DROPDOWN,
                             translation_key=CONF_AGE_GROUP,
@@ -107,7 +107,7 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                         CONF_GENDER, default=user_input.get(CONF_GENDER)
                     ): SelectSelector(
                         SelectSelectorConfig(
-                            options=["MALE", "FEMALE", "OTHER"],
+                            options=["male", "female", "divers"],
                             mode=SelectSelectorMode.DROPDOWN,
                             translation_key=CONF_GENDER,
                         ),
@@ -151,7 +151,7 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
             session = async_create_clientsession(self.hass)
             client = TkHusteblumeApiClient(session)
             return await client.async_register_user(
-                age_group, birth_month, gender, password
+                age_group.upper(), birth_month, gender.upper(), password
             )
         except Exception as e:  # pylint: disable=broad-except
             _LOGGER.error("Unable to register a new user", e)

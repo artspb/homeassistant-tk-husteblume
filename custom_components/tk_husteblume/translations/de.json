@@ -23,16 +23,16 @@
   "selector": {
     "age_group": {
       "options": {
-        "UP_TO_TWENTY": "bis 20",
-        "TWENTY_ONE_TO_FORTY": "21-40",
-        "FORTY_ONE_AND_ABOVE": "über 40"
+        "up_to_twenty": "bis 20",
+        "twenty_one_to_forty": "21-40",
+        "forty_one_and_above": "über 40"
       }
     },
     "gender": {
       "options": {
-        "MALE": "männlich",
-        "FEMALE": "weiblich",
-        "OTHER": "divers"
+        "male": "männlich",
+        "female": "weiblich",
+        "divers": "divers"
       }
     },
     "birth_month": {
