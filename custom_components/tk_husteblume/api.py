@@ -28,7 +28,7 @@ class TkHusteblumeApiClient:
         self._session = session
         self._app_id = app_id
         self._password = password
-        self._station = station
+        self._station = station.upper()
 
     async def async_get_stations(self) -> dict:
         """Get data from the API."""

@@ -125,7 +125,7 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                         CONF_STATION, default=user_input.get(CONF_STATION)
                     ): SelectSelector(
                         SelectSelectorConfig(
-                            options=list(stations.keys()),
+                            options=[station.lower() for station in stations.keys()],
                             mode=SelectSelectorMode.DROPDOWN,
                             translation_key=CONF_STATION,
                         ),
@@ -205,7 +205,7 @@ class TkHusteblumeOptionsFlowHandler(config_entries.OptionsFlow):
             data_schema=vol.Schema(
                 {
                     vol.Required(x, default=self.options.get(x, True)): bool
-                    for x in list(allergens.keys())
+                    for x in [allergen.lower() for allergen in allergens.keys()]
                 }
             ),
         )

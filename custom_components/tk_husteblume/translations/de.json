@@ -53,100 +53,100 @@
     },
     "station": {
       "options": {
-        "DEBERL": "Berlin",
-        "DEBER1": "Berlin Charité",
-        "DEHAMB": "Hamburg",
-        "DEMUNC": "München",
-        "DEBIED": "Biederstein (München)",
-        "DEKOEL": "Köln",
-        "DEFRAN": "Frankfurt am Main",
-        "DELEIP": "Leipzig",
-        "DEESSE": "Essen",
-        "DEBREM": "Bremen",
-        "DEDRES": "Dresden",
-        "DEHANN": "Hannover",
-        "DEBOCH": "Bochum",
-        "DEBONN": "Bonn",
-        "DEMSTR": "Münster",
-        "DEMANN": "Mannheim",
-        "DEKARL": "Karlsruhe",
-        "DEWIES": "Wiesbaden",
-        "DEMOEN": "Mönchengladbach",
-        "DEAACH": "Aachen",
-        "DEBRAU": "Braunschweig",
-        "DEKIEL": "Kiel",
-        "DECHEM": "Chemnitz",
-        "DEMAGD": "Magdeburg",
-        "DEFREI": "Freiburg",
-        "DELUEB": "Lübeck",
-        "DEERFU": "Erfurt",
-        "DEROST": "Rostock",
-        "DEHAGE": "Hagen (Westphalia)",
-        "DEPOTS": "Potsdam",
-        "DEOLDE": "Oldenburg",
-        "DEHEID": "Heidelberg",
-        "DEWUER": "Würzburg",
-        "DEERLA": "Erlangen",
-        "DEGOET": "Göttingen",
-        "DEJENA": "Jena",
-        "DETRIE": "Trier",
-        "DEMOER": "Moers",
-        "DECOTT": "Cottbus",
-        "DEGIES": "Giessen",
-        "DEFLEN": "Flensburg",
-        "DEBAMB": "Bamberg",
-        "DEMARB": "Marburg",
-        "DEDELM": "Delmenhorst",
-        "DEBAYR": "Bayreuth",
-        "DEFULD": "Fulda",
-        "DEROSE": "Rosenheim",
-        "DEGREI": "Greifswald",
-        "DEKREU": "Bad Kreuznach",
-        "DESOES": "Soest",
-        "DEPINN": "Pinneberg",
-        "DEHOMB": "Homburg",
-        "DEBUXT": "Buxtehude",
-        "DEVECH": "Vechta",
-        "DEGEES": "Geesthacht",
-        "DEWALS": "Walsrode",
-        "DEREIN": "Reinbek (Hamburg)",
-        "DEGARM": "Garmisch",
-        "DEWANG": "Wangen",
-        "DEFREU": "Freudenstadt",
-        "DETRAU": "Traunstein",
-        "DESYLT": "Sylt (Westerland)",
-        "DENEST": "Neustrelitz",
-        "DEGERL": "Gerlingen",
-        "DELIPP": "Bad Lippspringe",
-        "DEBITB": "Bitburg",
-        "DEWEST": "Westerland (Sylt)",
-        "DEWASS": "Wasserburg",
-        "DEBADE": "Bad Ems",
-        "DEWARN": "Warnemünde",
-        "DEBERC": "Berchtesgaden",
-        "DEMUST": "Münnerstadt",
-        "DETREU": "Treuenbrietzen",
-        "DELEMW": "Lemwerder",
-        "DEZUSM": "Zusmarshausen",
-        "DEKOEN": "Königsfeld",
-        "DENORD": "Norderney",
-        "DEDREB": "Drebkau",
-        "DEBINZ": "Binz (Rügen)",
-        "DEBORK": "Borkum",
-        "DEINZE": "Inzell",
-        "DEDONA": "Donaustauf",
-        "DEAUKR": "Aukrug",
-        "DELOEW": "Löwenstein",
-        "DEGAIS": "Gaissach (Bad Tölz)",
-        "DEAMRU": "Amrum",
-        "DEGARZ": "Garz (Rügen)",
-        "DEPRER": "Prerow (Darß)",
-        "DENEUS": "Neustadt (Harz)",
-        "DEGRAF": "Grafschaft (Schmallenberg)",
-        "DEOBER": "Oberjoch",
-        "DEHDMM": "Heiligendamm",
-        "DEWLOG": "Westerloge",
-        "DESCHN": "Schneefernerhaus"
+        "deberl": "Berlin",
+        "deber1": "Berlin Charité",
+        "dehamb": "Hamburg",
+        "demunc": "München",
+        "debied": "Biederstein (München)",
+        "dekoel": "Köln",
+        "defran": "Frankfurt am Main",
+        "deleip": "Leipzig",
+        "deesse": "Essen",
+        "debrem": "Bremen",
+        "dedres": "Dresden",
+        "dehann": "Hannover",
+        "deboch": "Bochum",
+        "debonn": "Bonn",
+        "demstr": "Münster",
+        "demann": "Mannheim",
+        "dekarl": "Karlsruhe",
+        "dewies": "Wiesbaden",
+        "demoen": "Mönchengladbach",
+        "deaach": "Aachen",
+        "debrau": "Braunschweig",
+        "dekiel": "Kiel",
+        "dechem": "Chemnitz",
+        "demagd": "Magdeburg",
+        "defrei": "Freiburg",
+        "delueb": "Lübeck",
+        "deerfu": "Erfurt",
+        "derost": "Rostock",
+        "dehage": "Hagen (Westphalia)",
+        "depots": "Potsdam",
+        "deolde": "Oldenburg",
+        "deheid": "Heidelberg",
+        "dewuer": "Würzburg",
+        "deerla": "Erlangen",
+        "degoet": "Göttingen",
+        "dejena": "Jena",
+        "detrie": "Trier",
+        "demoer": "Moers",
+        "decott": "Cottbus",
+        "degies": "Giessen",
+        "deflen": "Flensburg",
+        "debamb": "Bamberg",
+        "demarb": "Marburg",
+        "dedelm": "Delmenhorst",
+        "debayr": "Bayreuth",
+        "defuld": "Fulda",
+        "derose": "Rosenheim",
+        "degrei": "Greifswald",
+        "dekreu": "Bad Kreuznach",
+        "desoes": "Soest",
+        "depinn": "Pinneberg",
+        "dehomb": "Homburg",
+        "debuxt": "Buxtehude",
+        "devech": "Vechta",
+        "degees": "Geesthacht",
+        "dewals": "Walsrode",
+        "derein": "Reinbek (Hamburg)",
+        "degarm": "Garmisch",
+        "dewang": "Wangen",
+        "defreu": "Freudenstadt",
+        "detrau": "Traunstein",
+        "desylt": "Sylt (Westerland)",
+        "denest": "Neustrelitz",
+        "degerl": "Gerlingen",
+        "delipp": "Bad Lippspringe",
+        "debitb": "Bitburg",
+        "dewest": "Westerland (Sylt)",
+        "dewass": "Wasserburg",
+        "debade": "Bad Ems",
+        "dewarn": "Warnemünde",
+        "deberc": "Berchtesgaden",
+        "demust": "Münnerstadt",
+        "detreu": "Treuenbrietzen",
+        "delemw": "Lemwerder",
+        "dezusm": "Zusmarshausen",
+        "dekoen": "Königsfeld",
+        "denord": "Norderney",
+        "dedreb": "Drebkau",
+        "debinz": "Binz (Rügen)",
+        "debork": "Borkum",
+        "deinze": "Inzell",
+        "dedona": "Donaustauf",
+        "deaukr": "Aukrug",
+        "deloew": "Löwenstein",
+        "degais": "Gaissach (Bad Tölz)",
+        "deamru": "Amrum",
+        "degarz": "Garz (Rügen)",
+        "deprer": "Prerow (Darß)",
+        "deneus": "Neustadt (Harz)",
+        "degraf": "Grafschaft (Schmallenberg)",
+        "deober": "Oberjoch",
+        "dehdmm": "Heiligendamm",
+        "dewlog": "Westerloge",
+        "deschn": "Schneefernerhaus"
       }
     }
   },
@@ -154,14 +154,14 @@
     "step": {
       "user": {
         "data": {
-          "ALNU": "Erle",
-          "AMBR": "Traubenkraut",
-          "ARTE": "Beifuß",
-          "BETU": "Birke",
-          "CORY": "Hasel",
-          "FRAX": "Esche",
-          "POAC": "Gräser",
-          "SECA": "Roggen"
+          "alnu": "Erle",
+          "ambr": "Traubenkraut",
+          "arte": "Beifuß",
+          "betu": "Birke",
+          "cory": "Hasel",
+          "frax": "Esche",
+          "poac": "Gräser",
+          "seca": "Roggen"
         }
       }
     },
@@ -171,7 +171,7 @@
   },
   "entity": {
     "sensor": {
-      "ALNU": {
+      "alnu": {
         "name": "Erle",
         "state_attributes": {
           "tomorrow": {
@@ -182,7 +182,7 @@
           }
         }
       },
-      "AMBR": {
+      "ambr": {
         "name": "Traubenkraut",
         "state_attributes": {
           "tomorrow": {
@@ -193,7 +193,7 @@
           }
         }
       },
-      "ARTE": {
+      "arte": {
         "name": "Beifuß",
         "state_attributes": {
           "tomorrow": {
@@ -204,7 +204,7 @@
           }
         }
       },
-      "BETU": {
+      "betu": {
         "name": "Birke",
         "state_attributes": {
           "tomorrow": {
@@ -215,7 +215,7 @@
           }
         }
       },
-      "CORY": {
+      "cory": {
         "name": "Hasel",
         "state_attributes": {
           "tomorrow": {
@@ -226,7 +226,7 @@
           }
         }
       },
-      "FRAX": {
+      "frax": {
         "name": "Esche",
         "state_attributes": {
           "tomorrow": {
@@ -237,7 +237,7 @@
           }
         }
       },
-      "POAC": {
+      "poac": {
         "name": "Gräser",
         "state_attributes": {
           "tomorrow": {
@@ -248,7 +248,7 @@
           }
         }
       },
-      "SECA": {
+      "seca": {
         "name": "Roggen",
         "state_attributes": {
           "tomorrow": {

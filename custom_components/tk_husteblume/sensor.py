@@ -19,13 +19,11 @@ async def async_setup_entry(hass, config_entry, async_add_devices):
     station = config_entry.data[CONF_STATION]
     coordinator = hass.data[DOMAIN][config_entry.entry_id]
     options = config_entry.options
-    print(options)
     allergens = (
         [i for i in list(options.keys()) if options[i]]
         if len(options) > 0
-        else list(coordinator.data.keys())
+        else [allergen.lower() for allergen in coordinator.data.keys()]
     )
-    print(allergens)
     sensors = []
     for allergen in allergens:
         sensors.append(TkHusteblumeSensor(station, allergen, coordinator, config_entry))
@@ -46,7 +44,7 @@ class TkHusteblumeSensor(TkHusteblumeEntity, SensorEntity):
             translation_key=allergen,
         )
         self.station = station
-        self.allergen = allergen
+        self.allergen = allergen.upper()
 
     @property
     def native_value(self):
