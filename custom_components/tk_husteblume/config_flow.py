@@ -5,6 +5,7 @@ import secrets
 
 import voluptuous as vol
 from homeassistant import config_entries
+from homeassistant.core import callback
 from homeassistant.helpers.aiohttp_client import async_create_clientsession
 from homeassistant.helpers.selector import SelectSelector
 from homeassistant.helpers.selector import SelectSelectorConfig
@@ -70,6 +71,11 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
 
         _LOGGER.info("Showing a config form")
         return await self._show_config_form(user_input)
+
+    @staticmethod
+    @callback
+    def async_get_options_flow(config_entry):
+        return TkHusteblumeOptionsFlowHandler(config_entry)
 
     async def _show_config_form(self, user_input):  # pylint: disable=unused-argument
         """Show the configuration form."""
@@ -161,3 +167,61 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         except Exception as e:  # pylint: disable=broad-except
             _LOGGER.error("Invalid credentials", e)
             return False
+
+
+class TkHusteblumeOptionsFlowHandler(config_entries.OptionsFlow):
+    """Config flow options handler for tk_husteblume."""
+
+    def __init__(self, config_entry):
+        """Initialize HACS options flow."""
+        self.config_entry = config_entry
+        self.options = dict(config_entry.options)
+
+    async def async_step_init(self, user_input=None):  # pylint: disable=unused-argument
+        """Manage the options."""
+        return await self.async_step_user()
+
+    async def async_step_user(self, user_input=None):
+        """Handle a flow initialized by the user."""
+        if user_input is not None:
+            if len(self.options) == len(
+                [i for i in list(user_input.keys()) if user_input[i]]
+            ):
+                # This way, if there are ever new allergens, they won't be filtered out.
+                self.options = {}
+            else:
+                self.options.update(user_input)
+            return await self._update_options()
+
+        allergens = await self._get_allergens(
+            self.config_entry.data[CONF_APP_ID],
+            self.config_entry.data[CONF_PASSWORD],
+            self.config_entry.data[CONF_STATION],
+        )
+        if not allergens:
+            return self.async_abort(reason="unable_to_fetch_data")
+        return self.async_show_form(
+            step_id="user",
+            data_schema=vol.Schema(
+                {
+                    vol.Required(x, default=self.options.get(x, True)): bool
+                    for x in list(allergens.keys())
+                }
+            ),
+        )
+
+    async def _update_options(self):
+        """Update config entry options."""
+        return self.async_create_entry(
+            title=self.config_entry.data.get(CONF_APP_ID), data=self.options
+        )
+
+    async def _get_allergens(self, app_id, password, station):
+        """Verify credentials."""
+        try:
+            session = async_create_clientsession(self.hass)
+            client = TkHusteblumeApiClient(session, app_id, password, station)
+            return await client.async_get_data()
+        except Exception as e:  # pylint: disable=broad-except
+            _LOGGER.error("Unable to fetch data", e)
+            return None

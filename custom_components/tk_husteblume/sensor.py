@@ -18,11 +18,19 @@ async def async_setup_entry(hass, config_entry, async_add_devices):
     _LOGGER.info("Creating entities")
     station = config_entry.data[CONF_STATION]
     coordinator = hass.data[DOMAIN][config_entry.entry_id]
-    devices = []
-    for allergen in coordinator.data:
-        devices.append(TkHusteblumeSensor(station, allergen, coordinator, config_entry))
-    async_add_devices(devices)
-    _LOGGER.info(f"Created {len(devices)} entities")
+    options = config_entry.options
+    print(options)
+    allergens = (
+        [i for i in list(options.keys()) if options[i]]
+        if len(options) > 0
+        else list(coordinator.data.keys())
+    )
+    print(allergens)
+    sensors = []
+    for allergen in allergens:
+        sensors.append(TkHusteblumeSensor(station, allergen, coordinator, config_entry))
+    async_add_devices(sensors)
+    _LOGGER.info(f"Created {len(sensors)} entities")
 
 
 class TkHusteblumeSensor(TkHusteblumeEntity, SensorEntity):

@@ -150,6 +150,25 @@
       }
     }
   },
+  "options": {
+    "step": {
+      "user": {
+        "data": {
+          "ALNU": "Alder",
+          "AMBR": "Ragweed",
+          "ARTE": "Mugwort",
+          "BETU": "Birch",
+          "CORY": "Hazel",
+          "FRAX": "Ash",
+          "POAC": "Grasses",
+          "SECA": "Rye"
+        }
+      }
+    },
+    "abort": {
+      "unable_to_fetch_data": "Unable to fetch data from TK Husteblume"
+    }
+  },
   "entity": {
     "sensor": {
       "ALNU": {
