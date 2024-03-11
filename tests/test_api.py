@@ -52,13 +52,13 @@ async def test_api(hass, aioclient_mock, caplog):
 
     aioclient_mock.clear_requests()
     aioclient_mock.get(
-        "https://api.husteblume-app.de/forecast/test_station", json=result
+        "https://api.husteblume-app.de/forecast/TEST_STATION", json=result
     )
     assert await api.async_get_data() == result
     assert aioclient_mock.call_count == 1
     assert aioclient_mock.mock_calls[0] == (
         "GET",
-        URL("https://api.husteblume-app.de/forecast/test_station"),
+        URL("https://api.husteblume-app.de/forecast/TEST_STATION"),
         None,
         {"authorization": "Basic dGVzdF9hcHBfaWQ6dGVzdF9wYXNzd29yZA=="},
     )
