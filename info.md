@@ -10,6 +10,7 @@
 
 This integration provides information about allergens available in the [TK Husteblume](https://www.tk.de/techniker/magazin/digitale-gesundheit/apps/husteblume-allergie-app-2025388) app.
 For each allergen (e.g., Birch, Alder, etc.), an entity is created with its current level on the scale from 0 to 4.
+The forecast for tomorrow and the day after tomorrow is provided via attributes.
 The tracked allergens can be disabled via options.
 All of them are turned into entities by default.
 
