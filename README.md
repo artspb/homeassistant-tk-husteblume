@@ -13,16 +13,11 @@
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
-**TO BE REMOVED: If you need help, as a developer, to use this custom component template,
-please look at the [User Guide in the Cookiecutter documentation](https://cookiecutter-homeassistant-custom-component.readthedocs.io/en/stable/quickstart.html)**
-
 **This component will set up the following platforms.**
 
-| Platform        | Description                         |
-| --------------- | ----------------------------------- |
-| `binary_sensor` | Show something `True` or `False`.   |
-| `sensor`        | Show info from TK Husteblume API.   |
-| `switch`        | Switch something `True` or `False`. |
+| Platform | Description                       |
+| -------- | --------------------------------- |
+| `sensor` | Show info from TK Husteblume API. |
 
 ## Installation
 
@@ -37,21 +32,15 @@ please look at the [User Guide in the Cookiecutter documentation](https://cookie
 Using your HA configuration directory (folder) as a starting point, you should now also have this:
 
 ```text
+custom_components/tk_husteblume/translations/de.json
 custom_components/tk_husteblume/translations/en.json
-custom_components/tk_husteblume/translations/fr.json
-custom_components/tk_husteblume/translations/nb.json
-custom_components/tk_husteblume/translations/sensor.en.json
-custom_components/tk_husteblume/translations/sensor.fr.json
-custom_components/tk_husteblume/translations/sensor.nb.json
-custom_components/tk_husteblume/translations/sensor.nb.json
 custom_components/tk_husteblume/__init__.py
 custom_components/tk_husteblume/api.py
-custom_components/tk_husteblume/binary_sensor.py
 custom_components/tk_husteblume/config_flow.py
 custom_components/tk_husteblume/const.py
+custom_components/tk_husteblume/entity.py
 custom_components/tk_husteblume/manifest.json
 custom_components/tk_husteblume/sensor.py
-custom_components/tk_husteblume/switch.py
 ```
 
 ## Configuration is done in the UI
