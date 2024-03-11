@@ -47,7 +47,7 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 password,
             )
 
-            if "appId" in user:
+            if user is not None and "appId" in user:
                 _LOGGER.info("Successfully registered a new user")
                 user_input[CONF_PASSWORD] = password
                 user_input[CONF_APP_ID] = user["appId"]
@@ -142,7 +142,7 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
             client = TkHusteblumeApiClient(session)
             return await client.async_get_stations()
         except Exception as e:  # pylint: disable=broad-except
-            _LOGGER.error("Unable to fetch stations", e)
+            _LOGGER.error("Unable to fetch stations: %s", repr(e))
             return None
 
     async def _register_user(self, age_group, birth_month, gender, password):
@@ -154,7 +154,7 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 age_group.upper(), birth_month, gender.upper(), password
             )
         except Exception as e:  # pylint: disable=broad-except
-            _LOGGER.error("Unable to register a new user", e)
+            _LOGGER.error("Unable to register a new user: %s", repr(e))
             return None
 
     async def _test_credentials(self, app_id, password, station):
@@ -165,7 +165,7 @@ class TkHusteblumeFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
             await client.async_get_data()
             return True
         except Exception as e:  # pylint: disable=broad-except
-            _LOGGER.error("Invalid credentials", e)
+            _LOGGER.error("Invalid credentials: %s", repr(e))
             return False
 
 
@@ -223,5 +223,5 @@ class TkHusteblumeOptionsFlowHandler(config_entries.OptionsFlow):
             client = TkHusteblumeApiClient(session, app_id, password, station)
             return await client.async_get_data()
         except Exception as e:  # pylint: disable=broad-except
-            _LOGGER.error("Unable to fetch data", e)
+            _LOGGER.error("Unable to fetch data: %s", repr(e))
             return None

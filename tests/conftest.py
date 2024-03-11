@@ -24,7 +24,43 @@ def skip_notifications_fixture():
 @pytest.fixture(name="bypass_get_data")
 def bypass_get_data_fixture():
     """Skip calls to get data from API."""
-    with patch("custom_components.tk_husteblume.TkHusteblumeApiClient.async_get_data"):
+    with patch(
+        "custom_components.tk_husteblume.TkHusteblumeApiClient.async_get_stations",
+        return_value={"TEST_STATION": "test_city"},
+    ), patch(
+        "custom_components.tk_husteblume.TkHusteblumeApiClient.async_register_user",
+        return_value={"appId": "test_app_id"},
+    ), patch(
+        "custom_components.tk_husteblume.TkHusteblumeApiClient.async_get_data",
+        return_value={"test_allergen": [0, 1, 2]},
+    ):
+        yield
+
+
+# In this fixture, we are forcing calls to async_get_data to raise an Exception. This is useful
+# for exception handling.
+@pytest.fixture(name="error_on_get_stations")
+def error_get_stations_fixture():
+    """Simulate error when retrieving data from API."""
+    with patch(
+        "custom_components.tk_husteblume.TkHusteblumeApiClient.async_get_stations",
+        side_effect=Exception,
+    ):
+        yield
+
+
+# In this fixture, we are forcing calls to async_get_data to raise an Exception. This is useful
+# for exception handling.
+@pytest.fixture(name="error_on_register_user")
+def error_register_user_fixture():
+    """Simulate error when retrieving data from API."""
+    with patch(
+        "custom_components.tk_husteblume.TkHusteblumeApiClient.async_get_stations",
+        return_value={"TEST_STATION": ""},
+    ), patch(
+        "custom_components.tk_husteblume.TkHusteblumeApiClient.async_register_user",
+        side_effect=Exception,
+    ):
         yield
 
 
@@ -34,6 +70,12 @@ def bypass_get_data_fixture():
 def error_get_data_fixture():
     """Simulate error when retrieving data from API."""
     with patch(
+        "custom_components.tk_husteblume.TkHusteblumeApiClient.async_get_stations",
+        return_value={"TEST_STATION": ""},
+    ), patch(
+        "custom_components.tk_husteblume.TkHusteblumeApiClient.async_register_user",
+        return_value={"appId": "test_app_id"},
+    ), patch(
         "custom_components.tk_husteblume.TkHusteblumeApiClient.async_get_data",
         side_effect=Exception,
     ):
