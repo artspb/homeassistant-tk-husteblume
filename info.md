@@ -8,6 +8,17 @@
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
+This integration provides information about allergens available in the [TK Husteblume](https://www.tk.de/techniker/magazin/digitale-gesundheit/apps/husteblume-allergie-app-2025388) app.
+For each allergen (e.g., Birch, Alder, etc.), an entity is created with its current level on the scale from 0 to 4.
+The tracked allergens can be disabled via options.
+All of them are turned into entities by default.
+
+The app asks a user to enter some statistical information about them (an age group, a gender, and a birth month).
+The integration mimics this behavior as the API requires this data.
+Additionally, one needs to provide a tracking station.
+Choosing the one closest to the user's location is recommended.
+As there's no limit in the number of integration instances, one can create as many combinations of the user data as needed.
+
 **This component will set up the following platforms.**
 
 | Platform | Description                       |
