@@ -32,7 +32,7 @@ def bypass_get_data_fixture():
         return_value={"appId": "test_app_id"},
     ), patch(
         "custom_components.tk_husteblume.TkHusteblumeApiClient.async_get_data",
-        return_value={"test_allergen": [0, 1, 2]},
+        return_value={"TEST_ALLERGEN": [0, 1, 2]},
     ):
         yield
 
