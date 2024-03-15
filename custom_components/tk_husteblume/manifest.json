@@ -9,5 +9,5 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/artspb/homeassistant-tk-husteblume/issues",
   "requirements": ["async-timeout==4.0.3"],
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
