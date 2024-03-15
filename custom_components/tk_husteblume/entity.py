@@ -17,7 +17,7 @@ class TkHusteblumeEntity(CoordinatorEntity):
     @property
     def unique_id(self):
         """Return a unique ID to use for this entity."""
-        return f"{self.config_entry.entry_id}-{self.name}"
+        return f"{self.config_entry.entry_id}-{self.translation_key}"
 
     @property
     def device_info(self):
