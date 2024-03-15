@@ -1,2 +1,2 @@
 -r requirements.txt
-homeassistant==2024.3.0
+homeassistant>=2024.3.0
