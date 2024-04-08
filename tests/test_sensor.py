@@ -29,6 +29,6 @@ async def test_sensor(hass, enable_custom_integrations, bypass_get_data):
     }
     assert sensor.native_value == 0
     assert sensor.extra_state_attributes == {
-        "tomorrow": 1,
-        "day_after_tomorrow": 2,
+        "tomorrow": "1",
+        "day_after_tomorrow": "2",
     }

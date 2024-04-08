@@ -173,89 +173,257 @@
     "sensor": {
       "alnu": {
         "name": "Alder",
+        "state": {
+          "0": "None",
+          "1": "Low",
+          "2": "Middle",
+          "3": "High",
+          "4": "Very high"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Tomorrow"
+            "name": "Tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Day after tomorrow"
+            "name": "Day after tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           }
         }
       },
       "ambr": {
         "name": "Ragweed",
+        "state": {
+          "0": "None",
+          "1": "Low",
+          "2": "Middle",
+          "3": "High",
+          "4": "Very high"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Tomorrow"
+            "name": "Tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Day after tomorrow"
+            "name": "Day after tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           }
         }
       },
       "arte": {
         "name": "Mugwort",
+        "state": {
+          "0": "None",
+          "1": "Low",
+          "2": "Middle",
+          "3": "High",
+          "4": "Very high"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Tomorrow"
+            "name": "Tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Day after tomorrow"
+            "name": "Day after tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           }
         }
       },
       "betu": {
         "name": "Birch",
+        "state": {
+          "0": "None",
+          "1": "Low",
+          "2": "Middle",
+          "3": "High",
+          "4": "Very high"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Tomorrow"
+            "name": "Tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Day after tomorrow"
+            "name": "Day after tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           }
         }
       },
       "cory": {
         "name": "Hazel",
+        "state": {
+          "0": "None",
+          "1": "Low",
+          "2": "Middle",
+          "3": "High",
+          "4": "Very high"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Tomorrow"
+            "name": "Tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Day after tomorrow"
+            "name": "Day after tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           }
         }
       },
       "frax": {
         "name": "Ash",
+        "state": {
+          "0": "None",
+          "1": "Low",
+          "2": "Middle",
+          "3": "High",
+          "4": "Very high"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Tomorrow"
+            "name": "Tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Day after tomorrow"
+            "name": "Day after tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           }
         }
       },
       "poac": {
         "name": "Grasses",
+        "state": {
+          "0": "None",
+          "1": "Low",
+          "2": "Middle",
+          "3": "High",
+          "4": "Very high"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Tomorrow"
+            "name": "Tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Day after tomorrow"
+            "name": "Day after tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           }
         }
       },
       "seca": {
         "name": "Rye",
+        "state": {
+          "0": "None",
+          "1": "Low",
+          "2": "Middle",
+          "3": "High",
+          "4": "Very high"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Tomorrow"
+            "name": "Tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Day after tomorrow"
+            "name": "Day after tomorrow",
+            "state": {
+              "0": "None",
+              "1": "Low",
+              "2": "Middle",
+              "3": "High",
+              "4": "Very high"
+            }
           }
         }
       }

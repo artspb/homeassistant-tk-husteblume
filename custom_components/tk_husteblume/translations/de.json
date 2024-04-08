@@ -173,89 +173,257 @@
     "sensor": {
       "alnu": {
         "name": "Erle",
+        "state": {
+          "0": "Hoch",
+          "1": "Niedrig",
+          "2": "Mittle",
+          "3": "Hoch",
+          "4": "Sehr hoch"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Morgen"
+            "name": "Morgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Übermorgen"
+            "name": "Übermorgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           }
         }
       },
       "ambr": {
         "name": "Traubenkraut",
+        "state": {
+          "0": "Hoch",
+          "1": "Niedrig",
+          "2": "Mittle",
+          "3": "Hoch",
+          "4": "Sehr hoch"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Morgen"
+            "name": "Morgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Übermorgen"
+            "name": "Übermorgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           }
         }
       },
       "arte": {
         "name": "Beifuß",
+        "state": {
+          "0": "Hoch",
+          "1": "Niedrig",
+          "2": "Mittle",
+          "3": "Hoch",
+          "4": "Sehr hoch"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Morgen"
+            "name": "Morgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Übermorgen"
+            "name": "Übermorgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           }
         }
       },
       "betu": {
         "name": "Birke",
+        "state": {
+          "0": "Hoch",
+          "1": "Niedrig",
+          "2": "Mittle",
+          "3": "Hoch",
+          "4": "Sehr hoch"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Morgen"
+            "name": "Morgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Übermorgen"
+            "name": "Übermorgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           }
         }
       },
       "cory": {
         "name": "Hasel",
+        "state": {
+          "0": "Hoch",
+          "1": "Niedrig",
+          "2": "Mittle",
+          "3": "Hoch",
+          "4": "Sehr hoch"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Morgen"
+            "name": "Morgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Übermorgen"
+            "name": "Übermorgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           }
         }
       },
       "frax": {
         "name": "Esche",
+        "state": {
+          "0": "Hoch",
+          "1": "Niedrig",
+          "2": "Mittle",
+          "3": "Hoch",
+          "4": "Sehr hoch"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Morgen"
+            "name": "Morgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Übermorgen"
+            "name": "Übermorgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           }
         }
       },
       "poac": {
         "name": "Gräser",
+        "state": {
+          "0": "Hoch",
+          "1": "Niedrig",
+          "2": "Mittle",
+          "3": "Hoch",
+          "4": "Sehr hoch"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Morgen"
+            "name": "Morgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Übermorgen"
+            "name": "Übermorgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           }
         }
       },
       "seca": {
         "name": "Roggen",
+        "state": {
+          "0": "Hoch",
+          "1": "Niedrig",
+          "2": "Mittle",
+          "3": "Hoch",
+          "4": "Sehr hoch"
+        },
         "state_attributes": {
           "tomorrow": {
-            "name": "Morgen"
+            "name": "Morgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           },
           "day_after_tomorrow": {
-            "name": "Übermorgen"
+            "name": "Übermorgen",
+            "state": {
+              "0": "Hoch",
+              "1": "Niedrig",
+              "2": "Mittle",
+              "3": "Hoch",
+              "4": "Sehr hoch"
+            }
           }
         }
       }

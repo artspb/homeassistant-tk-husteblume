@@ -58,8 +58,8 @@ class TkHusteblumeSensor(TkHusteblumeEntity, SensorEntity):
         values = self.coordinator.data.get(self.allergen)
         return (
             {
-                "tomorrow": values[1],
-                "day_after_tomorrow": values[2],
+                "tomorrow": str(values[1]),
+                "day_after_tomorrow": str(values[2]),
             }
             if len(values) > 2
             else None
