@@ -1,6 +1,7 @@
 """Test TK Husteblume setup process."""
 
 import pytest
+from homeassistant.config_entries import ConfigEntryState
 from homeassistant.exceptions import ConfigEntryNotReady
 from pytest_homeassistant_custom_component.common import MockConfigEntry
 
@@ -23,7 +24,9 @@ async def test_setup_unload_and_reload_entry(
 ):
     """Test entry setup and unload."""
     # Create a mock entry so we don't have to go through config flow
-    config_entry = MockConfigEntry(domain=DOMAIN, data=MOCK_CONFIG, entry_id="test")
+    config_entry = MockConfigEntry(
+        domain=DOMAIN, data=MOCK_CONFIG, entry_id="test", state=ConfigEntryState.LOADED
+    )
 
     # Set up the entry and assert that the values set during setup are where we expect
     # them to be. Because we have patched the TkHusteblumeDataUpdateCoordinator.async_get_data
