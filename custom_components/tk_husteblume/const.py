@@ -4,7 +4,7 @@
 NAME = "TK Husteblume"
 DOMAIN = "tk_husteblume"
 DOMAIN_DATA = f"{DOMAIN}_data"
-VERSION = "0.0.5"
+VERSION = "0.0.6"
 
 ATTRIBUTION = "Data provided by Techniker Krankenkasse"
 ISSUE_URL = "https://github.com/artspb/homeassistant-tk-husteblume/issues"
