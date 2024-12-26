@@ -1,0 +1,196 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "TK Husteblume",
+        "description": "Se precisar de ajuda com a configuração, consulte: https://github.com/artspb/homeassistant-tk-husteblume",
+        "data": {
+          "age_group": "Faixa etária",
+          "gender": "Género",
+          "birth_month": "Mês de nascimento",
+          "station": "Estação"
+        }
+      }
+    },
+    "error": {
+      "auth": "Credenciais inválidas",
+      "unable_to_register": "Não foi possível registar um novo utilizador no TK Husteblume"
+    },
+    "abort": {
+      "unable_to_fetch_stations": "Não foi possível obter as estações do TK Husteblume"
+    }
+  },
+  "selector": {
+    "age_group": {
+      "options": {
+        "up_to_twenty": "Até vinte",
+        "twenty_one_to_forty": "De vinte e um a quarenta",
+        "forty_one_and_above": "Mais de quarenta"
+      }
+    },
+    "gender": {
+      "options": {
+        "male": "Masculino",
+        "female": "Feminino",
+        "divers": "Outro"
+      }
+    },
+    "birth_month": {
+      "options": {
+        "1": "Janeiro",
+        "2": "Fevereiro",
+        "3": "Março",
+        "4": "Abril",
+        "5": "Maio",
+        "6": "Junho",
+        "7": "Julho",
+        "8": "Agosto",
+        "9": "Setembro",
+        "10": "Outubro",
+        "11": "Novembro",
+        "12": "Dezembro"
+      }
+    },
+    "station": {
+      "options": {
+        "deberl": "Berlim",
+        "deber1": "Berlim Charité",
+        "dehamb": "Hamburgo",
+        "demunc": "Munique",
+        "debied": "Biederstein (Munique)",
+        "dekoel": "Colónia",
+        "defran": "Frankfurt am Main",
+        "deleip": "Leipzig",
+        "deesse": "Essen",
+        "debrem": "Bremen",
+        "dedres": "Dresden",
+        "dehann": "Hanôver",
+        "deboch": "Bochum",
+        "debonn": "Bona",
+        "demstr": "Münster",
+        "demann": "Mannheim",
+        "dekarl": "Karlsruhe",
+        "dewies": "Wiesbaden",
+        "demoen": "Mönchengladbach",
+        "deaach": "Aachen",
+        "debrau": "Braunschweig",
+        "dekiel": "Kiel",
+        "dechem": "Chemnitz",
+        "demagd": "Magdeburgo",
+        "defrei": "Friburgo",
+        "delueb": "Lübeck",
+        "deerfu": "Erfurt",
+        "derost": "Rostock",
+        "dehage": "Hagen (Vestfália)",
+        "depots": "Potsdam",
+        "deolde": "Oldenburg",
+        "deheid": "Heidelberg",
+        "dewuer": "Würzburg",
+        "deerla": "Erlangen",
+        "degoet": "Göttingen",
+        "dejena": "Jena",
+        "detrie": "Tréveris",
+        "demoer": "Moers",
+        "decott": "Cottbus",
+        "degies": "Giessen",
+        "deflen": "Flensburg",
+        "debamb": "Bamberg",
+        "demarb": "Marburg",
+        "dedelm": "Delmenhorst",
+        "debayr": "Bayreuth",
+        "defuld": "Fulda",
+        "derose": "Rosenheim",
+        "degrei": "Greifswald",
+        "dekreu": "Bad Kreuznach",
+        "desoes": "Soest",
+        "depinn": "Pinneberg",
+        "dehomb": "Homburg",
+        "debuxt": "Buxtehude",
+        "devech": "Vechta",
+        "degees": "Geesthacht",
+        "dewals": "Walsrode",
+        "derein": "Reinbek (Hamburgo)",
+        "degarm": "Garmisch",
+        "dewang": "Wangen",
+        "defreu": "Freudenstadt",
+        "detrau": "Traunstein",
+        "desylt": "Sylt (Westerland)",
+        "denest": "Neustrelitz",
+        "degerl": "Gerlingen",
+        "delipp": "Bad Lippspringe",
+        "debitb": "Bitburgo",
+        "dewest": "Westerland (Sylt)",
+        "dewass": "Wasserburg",
+        "debade": "Bad Ems",
+        "dewarn": "Warnemünde",
+        "deberc": "Berchtesgaden",
+        "demust": "Münnerstadt",
+        "detreu": "Treuenbrietzen",
+        "delemw": "Lemwerder",
+        "dezusm": "Zusmarshausen",
+        "dekoen": "Königsfeld",
+        "denord": "Norderney",
+        "dedreb": "Drebkau",
+        "debinz": "Binz (Rügen)",
+        "debork": "Borkum",
+        "deinze": "Inzell",
+        "dedona": "Donaustauf",
+        "deaukr": "Aukrug",
+        "deloew": "Löwenstein",
+        "degais": "Gaissach (Bad Tölz)",
+        "deamru": "Amrum",
+        "degarz": "Garz (Rügen)",
+        "deprer": "Prerow (Darß)",
+        "deneus": "Neustadt (Harz)",
+        "degraf": "Grafschaft (Schmallenberg)",
+        "deober": "Oberjoch",
+        "dehdmm": "Heiligendamm",
+        "dewlog": "Westerloge",
+        "deschn": "Schneefernerhaus"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "data": {
+          "alnu": "Amieiro",
+          "ambr": "Ambrósia",
+          "arte": "Artemísia",
+          "betu": "Bétula",
+          "cory": "Aveleira",
+          "frax": "Freixo",
+          "poac": "Gramíneas",
+          "seca": "Centeio"
+        }
+      }
+    },
+    "abort": {
+      "unable_to_fetch_data": "Não foi possível obter dados do TK Husteblume"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "alnu": {
+        "name": "Amieiro",
+        "state": {
+          "0": "Nenhum",
+          "1": "Baixo",
+          "2": "Médio",
+          "3": "Alto",
+          "4": "Muito alto"
+        }
+      },
+      "ambr": {
+        "name": "Ambrósia",
+        "state": {
+          "0": "Nenhum",
+          "1": "Baixo",
+          "2": "Médio",
+          "3": "Alto",
+          "4": "Muito alto"
+        }
+      }
+    }
+  }
+}
