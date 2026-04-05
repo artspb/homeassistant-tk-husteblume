@@ -1,6 +1,6 @@
 {
   "domain": "tk_husteblume",
-  "name": "TK Husteblume",
+  "name": "TK Husteblume (Deprecated)",
   "codeowners": ["@artspb"],
   "config_flow": true,
   "dependencies": [],
