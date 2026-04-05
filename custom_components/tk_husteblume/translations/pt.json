@@ -192,5 +192,11 @@
         }
       }
     }
+  },
+  "issues": {
+    "deprecated_integration": {
+      "title": "TK-Husteblume is Deprecated",
+      "description": "At the request of Techniker Krankenkasse, this integration is retired. Please switch to the official 'DWD Pollenflug' integration. Details can be found in the repository README."
+    }
   }
 }
