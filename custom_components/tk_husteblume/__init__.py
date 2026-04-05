@@ -13,6 +13,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.core_config import Config
 from homeassistant.exceptions import ConfigEntryNotReady
+from homeassistant.helpers import issue_registry as ir
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 from homeassistant.helpers.update_coordinator import UpdateFailed
@@ -64,6 +65,23 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
         )
 
     entry.async_on_unload(entry.add_update_listener(async_reload_entry))
+
+    _LOGGER.warning(
+        "THE TK-HUSTEBLUME INTEGRATION IS DEPRECATED. "
+        "At the request of Techniker Krankenkasse (TK), this integration is being retired. "
+        "Please migrate to the 'DWD Pollenflug' integration for continued pollen data."
+    )
+
+    ir.async_create_issue(
+        hass,
+        DOMAIN,
+        "deprecated_integration",
+        is_fixable=False,
+        severity=ir.IssueSeverity.WARNING,
+        translation_key="deprecation_warning",
+        learn_more_url="https://github.com/artspb/homeassistant-tk-husteblume",
+    )
+
     return True
 
 
