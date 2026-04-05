@@ -13,6 +13,18 @@
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
+**⚠️ DEPRECATION NOTICE**
+
+This integration is **deprecated** and will no longer be maintained.
+
+Following a request from **Techniker Krankenkasse (TK)**, this integration is being retired as they cannot support third-party access to the TK-Husteblume API for security reasons.
+
+**Recommended Alternative:** Please switch to the official [DWD Pollenflug](https://github.com/mampfes/hacs_dwd_pollenflug) integration (available in HACS). It uses the same underlying data source (Deutscher Wetterdienst) that the TK-Husteblume app uses.
+
+_Thank you to everyone who supported this project!_
+
+---
+
 This integration provides information about allergens available in the [TK Husteblume](https://www.tk.de/techniker/magazin/digitale-gesundheit/apps/husteblume-allergie-app-2025388) app.
 For each allergen (e.g., Birch, Alder, etc.), an entity is created with its current level on the scale from 0 to 4.
 The forecast for tomorrow and the day after tomorrow is provided via attributes.
